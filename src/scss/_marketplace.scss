@@ -1,0 +1,145 @@
+.marketplace {
+}
+.marketplace .header {
+  //  position: relative;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  flex-basis: 100%;
+  flex: 1;
+}
+.marketplace .s-center {
+  position: absolute;
+  max-width: 50%;
+  top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.marketplace .logo-d {
+  margin: 1%;
+  position: absolute;
+  width: 18%;
+  left: 0;
+}
+.marketplace .head1 {
+  width: 100%;
+  max-height: 60vh;
+}
+.marketplace .head2 {
+  width: 100%;
+  max-height: 60vh;
+}
+.grid-container {
+  display: grid;
+  min-height: 40vh;
+  grid-template-columns: auto auto auto auto;
+}
+.grid-item {
+  text-align: center;
+  min-height: 40vh;
+}
+// @media (max-width: 1090px) {
+//   .grid-item {
+//     bottom: 30%;
+//   }
+// }
+.marketplace .bg-y {
+  background-color: $yellow !important;
+  border: 5px solid #000;
+}
+
+.marketplace .bg-b {
+  background-color: $blue !important;
+  border: 5px solid #000;
+}
+.marketplace .bg-r {
+  background-color: $red !important;
+  border: 5px solid #000;
+}
+.marketplace .logo {
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  /* padding-bottom: 45vh; */
+}
+.marketplace-card-img {
+  max-width: $fullwidth;
+  height: auto;
+}
+.m-marketplace {
+  display: none;
+}
+@media (max-width: $mobile) {
+  .m-marketplace {
+    display: block;
+  }
+  .marketplace {
+    display: none;
+  }
+  .m-marketplace {
+    border: 5px solid $primary;
+    min-height: 100vh;
+  }
+  .half-header {
+    background-color: $yellow;
+    background-image: url("../img/marketplace/mask-bg-m.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    min-height: 50vh !important;
+  }
+  .m-marketplace-footer {
+    background-color: $blue;
+    min-height: 50vh;
+  }
+  .m-marketplace .logo {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .m-marketplace .center {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .m-marketplace .center .batmaN {
+    max-width: 65%;
+  }
+
+  .grid-container {
+    position: absolute;
+    bottom: 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .grid-item {
+    border: 5px solid $blue;
+    border-right: 3px solid #000;
+    text-align: center;
+    z-index: 1;
+  }
+  .m-marketplace-footer .bottom {
+    position: absolute;
+    bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .batman-talk {
+    background-image: url("../img/marketplace/batman-talk.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .m-marketplace .right {
+    position: absolute;
+    right: 0;
+  }
+}

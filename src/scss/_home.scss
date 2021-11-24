@@ -1,0 +1,260 @@
+.home {
+  background-image: url("../img/Home/cloud-d-left.svg"),
+    url("../img/Home/d-h-boom.svg"), url("../img/Home/home-bg-d.svg");
+  height: 100%;
+  min-height: 100vh;
+  background-position: top left, top center, bottom;
+  background-repeat: no-repeat;
+  background-size: 20%, 70vw, cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.count-down {
+  position: absolute;
+  left: 3%;
+  bottom: 0;
+  gap: 5vw;
+}
+.count-down p {
+  font-family: "Comic Sans MS";
+  font-weight: normal;
+  font-style: italic;
+  color: $countdownp;
+  color: white;
+}
+.logo-h-d {
+  top: 5%;
+  position: absolute;
+  left: 3%;
+  width: 20%;
+}
+.count-down h2 {
+  font-family: "Ticking Timebomb BB";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  color: $white;
+  font-size: 10vmin;
+}
+.home .left {
+  background-image: url("../img/Home/left.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  width: $fullwidth;
+  height: 85vh;
+}
+.i-man-d {
+  max-width: 30%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.home .right {
+  background-image: url("../img/Home/right.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  width: $fullwidth;
+  height: 100vh;
+}
+.home .footer {
+  background-image: url("../img/Home/footer.svg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  position: absolute;
+  bottom: -30%;
+  height: 40vh;
+}
+.s-link {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+}
+.s-link a {
+  color: #fff;
+}
+@media (max-width: 1399px) {
+  .s-link {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+  }
+  .s-link a {
+    color: #fff;
+  }
+  .i-man-d {
+    max-width: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+  }
+  .home {
+    background-image: url("../img/Home/cloud-d-left.svg"),
+      url("../img/Home/d-h-boom.svg"), url("../img/Home/home-bg-d.svg");
+    height: 100%;
+    min-height: 100vh;
+    background-position: top left, center, bottom;
+    background-repeat: no-repeat;
+    background-size: 20%, 100vw, cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.m-home {
+  display: none;
+}
+@media (max-width: 1020px) {
+  .count-down {
+    position: absolute;
+    left: 3%;
+    bottom: 5%;
+    gap: 5vw;
+  }
+  .home {
+    background-image: url("../img/Home/cloud-d-left.svg"),
+      url("../img/Home/d-h-boom.svg"), url("../img/Home/home-bg-d.svg");
+    height: 100%;
+    min-height: 100vh;
+    background-position: top left, center, center;
+    background-repeat: no-repeat;
+    background-size: 20%, 100vw,cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: $mobile) {
+  .m-home {
+    display: block;
+    overflow-x: hidden;
+  }
+  .home {
+    display: none;
+  }
+  .m-home .count-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+  }
+  .home-mobile {
+    background-image: url("../img/Home/mobile/cloud.svg"),
+      url("../img/Home/mobile/center-bg.svg"),
+      radial-gradient(
+        circle,
+        rgba(249, 144, 161, 1) 0%,
+        rgba(216, 28, 92, 1) 100%
+      );
+    background-repeat: no-repeat;
+    background-size: 30%, cover, 100%;
+    background-position: top left, center, center;
+    min-height: 90vh;
+    height: 100%;
+  }
+  .home-mobile-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .home-mobile-footer .column {
+    flex: $halfwidth;
+    // height: 30vh;
+  }
+  .m-home .mf-flex {
+    background-color: #fff;
+    background-image: url("../img/Home/mobile/footer-bg1.svg"),
+      url("../img/Home/mobile/footer-bg2.svg");
+    background-position: left, right;
+    background-size: 50%, 50%;
+    background-repeat: no-repeat;
+    min-height: 27vh;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+  }
+  .footer-bg1 {
+    background-image: url("../img/Home/mobile/footer-bg1.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+  }
+  .m-h-logo {
+    max-width: 50%;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+  }
+  .footer-bg2 {
+    background-image: url("../img/Home/mobile/footer-bg2.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 20vh;
+  }
+  .footer-bg2 h2 {
+    font-family: "Comic Sans MS";
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    margin-top: 10%;
+    // font-size: 1.5em;
+    // position: absolute;
+    // bottom: 6%;
+    right: 10%;
+    transform: rotate(-90deg);
+  }
+  .m-home .boom {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+  .m-man {
+    max-width: 30%;
+    position: absolute;
+    left: 20%;
+  }
+  .m-home .mf-flex h2 {
+    font-family: "Comic Sans MS";
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    margin-top: 17%;
+    font-size: 6vmin;
+    position: absolute;
+    // bottom: 6%;
+    right: 10%;
+    transform: rotate(-90deg);
+  }
+  .m-home .count-down p {
+    font-family: "Comic Sans MS";
+    font-weight: normal;
+    font-style: italic;
+    color: white;
+  }
+  .pull-icons {
+    margin-top: 4%;
+    position: absolute;
+    right: 5%;
+    color: #fff;
+  }
+  .pull-icons a { 
+    color: white !important;
+  }
+
+  .m-st-italk {
+    position: absolute;
+    left: 10%;
+    // bottom: -20%;
+    width: 43%;
+  }
+}

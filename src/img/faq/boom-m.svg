@@ -1,0 +1,18 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="272.889" height="221.948" viewBox="0 0 272.889 221.948">
+  <defs>
+    <filter id="FAQs" x="53.945" y="71.298" width="165" height="95" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_16" data-name="Group 16" transform="translate(-51.055 -117.702)">
+    <path id="Shape" d="M1096.67,242.2c5.2,14.691,15.188,28.694,29.71,34.833s33.682,2,40.708-11.578c-4.7,14.74.01,32.224,11.611,43.133s29.51,14.692,44.182,9.332c-22.078,18.183-10.5,67.6,15.2,84.76-15.223-11.127-44.194-10.862-52.6-.051s-10.172,25.4-9.722,39.223c-8.1-15.5-29.339-20.921-45.8-15.623s-28.716,18.713-38.19,32.918c.278-17.207-15.636-32.4-32.934-35.248s-34.748,4.571-47.57,15.89c12.163-29.57-8.981-68.482-41.065-75.578a62.972,62.972,0,0,0,34.983-42.595c4.291-18.566-.449-39.207-12.53-54.565a59.571,59.571,0,0,0,16.16,7.578c14.991,4.733,30.762,8.81,46.106,6.407S1094.063,257.3,1096.67,242.2Z" transform="translate(-916.638 -121.995)" fill="#fff" stroke="#231c64" stroke-linejoin="round" stroke-width="5"/>
+    <g transform="matrix(1, 0, 0, 1, 51.06, 117.7)" filter="url(#FAQs)">
+      <text id="FAQs-2" data-name="FAQs" transform="translate(136.44 136.8)" fill="#f42168" stroke="#fff" stroke-linejoin="round" stroke-width="2.5" font-size="62" font-family="Nunito-BlackItalic, Nunito" font-weight="800" font-style="italic"><tspan x="-79.143" y="0">FAQs</tspan></text>
+    </g>
+  </g>
+</svg>

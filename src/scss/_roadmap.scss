@@ -1,0 +1,73 @@
+.roadmap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/Roadmap/cloud-left.svg"),
+    url("../img/Roadmap/cloud-right.svg"), url("../img/Roadmap/mask.svg"),
+    radial-gradient(
+      circle,
+      rgba(135, 229, 251, 1) 0%,
+      rgba(6, 156, 201, 1) 35%,
+      rgba(0, 145, 164, 1) 100%
+    );
+  min-height: 100vh;
+  background-position: top left, bottom right, center, center;
+  background-size: 20%, 20%, cover, 100%;
+  background-repeat: no-repeat;
+  border: 8px solid $primary;
+  overflow: hidden;
+}
+.roadmap .logo {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+.roadmap .logo img {
+   max-width: 100%;
+   height: auto;
+}
+.roadmap .heading {
+    position: absolute;
+    background-color: $roadmapblue;
+    color: white;
+    bottom: 0;
+    left: 0;
+    padding: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border: 8px solid $primary;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    font-style: normal;
+}
+.roadmap .heading  h1 {
+    font-size: 52px;
+    // letter-spacing: 3px;
+}
+.roadmap .map .img-fluid {
+  max-width: 80% !important;
+  height: auto;
+}
+.roadmap .map {
+    // position: absolute;
+    // top: 25%;
+    // margin-left: auto;
+    // margin-right: auto;
+    // left: 0;
+    // right: 0;
+}
+@media (max-width: $mobile) {
+  .roadmap .map .img-fluid {
+    max-width: 100% !important;
+    height: auto;
+  }
+    .roadmap .map {
+        position: absolute;
+        top: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        margin: 5%;
+    }
+}

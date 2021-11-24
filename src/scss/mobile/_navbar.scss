@@ -1,0 +1,26 @@
+.m-navbar {
+    background-color: #4eb9ec;
+    min-height: 10vh;
+    border: 5px solid #262262;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    font-style: normal;
+  }
+  .p {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    font-style: normal;
+  }
+  .m-navbar .active {
+    color: #f42168;
+  }
+  .mr-5 {
+    margin-right: 2rem !important;
+  }
+  .mll {
+    margin-left: 2rem !important;
+  }

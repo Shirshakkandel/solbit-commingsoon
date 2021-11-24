@@ -1,0 +1,185 @@
+.home-two {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.s-flex {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.child {
+  border: 3px solid $primary;
+  width: 50%;
+  height: 80vh;
+  overflow: hidden;
+  max-height: 80vh;
+}
+.head-bar {
+  background-color: #ffbb00;
+  min-height: 5vh;
+  border-bottom: 3px solid #000;
+}
+.head-one {
+  background-color: #04a6b7;
+  background-image: url("../img/Home2/mask1.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 15vh;
+}
+.clear {
+  clear: both;
+}
+.head-two {
+  background-color: $perple;
+  background-image: url("../img/Home2/boom.svg"), url("../img/Home2/mask3.svg");
+  background-position: bottom left, top center;
+  background-repeat: no-repeat;
+  background-size: 20%, 100%;
+  border: 3px solid #000;
+  min-height: 40vh;
+}
+.bg-p {
+  background-color: $red !important;
+}
+.content-box {
+  background-color: white;
+  min-height: 15vh;
+  border: 2px solid $primary;
+  width: 50%;
+}
+.content-box p {
+  margin: 5%;
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2vmin;
+}
+.content-box-p {
+  background-color: #04a6b7;
+  background-image: url("../img/Home2/mask2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 13vh;
+  border: 2px solid $primary;
+  width: 50%;
+}
+.ironman-home {
+  position: absolute;
+  right: 49%;
+  width: 27%;
+}
+.iron-talk {
+  position: absolute;
+  left: 13%;
+  top: 23%;
+  width: 25%;
+  transform: rotate(-15deg);
+}
+.sticker {
+  position: absolute;
+  top: 33%;
+}
+.header {
+  min-height: 10vh;
+  background-color: black;
+}
+.header-red {
+  min-height: 10vh;
+  background-color: $red;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  width: 18vmax;
+}
+.bottom-right {
+  position: absolute;
+  bottom: -12%;
+  right: 0;
+  max-width: 50%;
+  z-index: -1;
+}
+@media (max-width: 998px) {
+  .logo {
+    position: absolute;
+    top: 0;
+    width: 25vmax;
+  }
+}
+.home-bg-right {
+  // background-image: url("../img/Home2/right.svg");
+  // background-repeat: no-repeat;
+  // background-position: left;
+  // background-size: 100vw 100vh;
+  min-height: 80vh;
+}
+.home2-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+.home-two-m {
+  display: none;
+}
+// mobile ui
+@media (max-width: $mobile) {
+  .home-two,
+  .header,
+  .header-red {
+    display: none;
+  }
+  .home-two-m {
+    display: block;
+  }
+  .home-two-m {
+    background-image: url("../img/Home2/m-home-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  .m-home2-batman {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+  }
+  .home-two-m .footer-content-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: $halfwidth !important;
+    min-height: 3vh;
+    border: 3px solid $primary;
+  }
+  .home-two-m .footer-content-box p {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    font-style: italic;
+  }
+  .home-two-m .batman-talk {
+    position: absolute;
+    top: 38%;
+    right: 32%;
+    max-width: 100%;
+    height: auto;
+  }
+  .ball {
+    right: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    max-width: 51%;
+  }
+  .alam {
+    position: absolute;
+    top: 18%;
+    left: 0;
+    overflow: hidden;
+    margin: 5%;
+    max-width: 92%;
+    height: auto;
+    }
+}

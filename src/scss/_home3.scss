@@ -1,0 +1,157 @@
+.home-3 {
+  min-height: 100vh;
+  background-image: url("../img/Home3/cloud-r.svg"),
+    url("../img/Home3/cloud-l.svg"), url("../img/Home3/bg.svg");
+  background-position: bottom right, top left, center;
+  background-size: 20%, 20%, 140vw 150vh;
+  background-attachment: fixed;
+  background-color: $green;
+  border: 7px solid $primary;
+  background-repeat: no-repeat;
+}
+.home-3 .boom {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+}
+.home-3 .h3-logo {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 18%;
+}
+.home-3 .content-box-left {
+  position: absolute;
+  bottom: 3%;
+  min-height: 10vh;
+  width: 28%;
+  left: 0;
+  background-color: white;
+  border: 3px solid $primary;
+}
+.home-3 .content-box-left p {
+  margin: 5%;
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+.home-3 .content-box-right {
+  position: absolute;
+  top: 37%;
+  min-height: 10vh;
+  width: 27%;
+  right: 0;
+  background-color: white;
+  border: 3px solid $primary;
+}
+.home-3 .content-box-right p {
+  margin: 5%;
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+.home-3 .footer-man {
+  width: 21%;
+  position: absolute;
+  bottom: 0;
+  right: 7%;
+}
+.home-3 .center-man {
+  width: 21%;
+  position: absolute;
+  left: -2%;
+  top: 32%;
+}
+.home-3 .wallet {
+  position: absolute;
+  bottom: 3%;
+  left: 40%;
+  right: 40%;
+}
+.wallet .button {
+  border-radius: 10px;
+  display: block;
+  background-color: #ff1948;
+  color: white;
+  padding: 5%;
+  width: 20vw;
+  text-align: center;
+  border: 5px solid $primary;
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3vmin;
+  cursor: pointer;
+}
+.m-home-3 {
+  display: none;
+}
+@media (max-width: $mobile) {
+  .home-3 {
+    display: none;
+  }
+  .m-home-3 {
+    display: block;
+    border: 5px solid $primary;
+    min-height: 100vh;
+  }
+  .m-home-3-bg {
+    background-image: url("../img/Home3/cloud-m.svg"), url("../img/Home3/cloud-m-top.svg"),url("../img/Home3/m-bg-spike.svg"), radial-gradient(circle, $rg1 0%, $rg2 35%, $rg3 100%);
+    background-position: bottom right,top left, center, center;
+    background-size: 40%, 40%, cover, cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  .m-home-3 .first-cont-box {
+    position: absolute;
+    top: 25%;
+    margin: 5%;
+    text-align: left;
+    background-color: white;
+    border: 2px solid $primary;
+  }
+  .m-home-3 .first-cont-box p{
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    font-style: italic;
+  }
+  .m-home-3 .m-boom .img-fluid {
+    max-width: 80%;
+    z-index: 1;
+  }
+  .m-home-3 .m-boom {
+    position: absolute;
+    bottom: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .m-home-3 .wallet {
+    position: absolute;
+    bottom: 3%;
+  }
+  .m-home-3 .wallet .button {
+    border-radius: 10px;
+    display: block;
+    background-color: #ff1948;
+    color: white;
+    padding: 5%;
+    width: 16em;
+    text-align: center;
+    border: 5px solid $primary;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3vmin;
+    cursor: pointer;
+  }
+}
